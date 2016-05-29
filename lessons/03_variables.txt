@@ -1,0 +1,35 @@
+Learning
+--------
+Variables are how our programs "remember" things. Variables hold data, and then
+we can use or update that data later.
+
+Some examples:
+'''
+void setup() {
+    // declaring some variables
+    string phrase = "Hi there!";  // string variables hold text
+    int sheep_counted = 2;        // int variables hold whole numbers
+    float inches = 3.26;          // float variables hold fractional numbers
+
+    // we can update variable values, or use them to make new values.
+}
+
+void loop() {
+}
+'''
+
+
+
+Challenges
+----------
+1) Write a program that declares variables to hold your name, age, and
+   temperature.
+
+2) Modify your program to assign new values to the variables later in the
+   program.
+
+3) Modify your program to print the values of your variables at each step of
+   the program.
+
+*) Modify your program to print the variable's name and its type before
+   printing its value.
