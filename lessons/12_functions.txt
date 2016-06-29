@@ -46,6 +46,8 @@ void do_blink_routine() {
 }
 '''
 
+This is the kind of function you will be most likely to use.
+
 A function that's a little fancier and can change it's behavior based on a
 parameter would look like:
 '''

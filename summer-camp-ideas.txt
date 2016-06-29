@@ -1,36 +1,36 @@
 Gamification
 ============
 Earn components (like batteries) for completing various programming tasks.
-	Not sure how far to take this...
-	Ideas:
-		- They start with a basic set like:
-			Arduino and Cable
-			breadboard
-			resistors
-			Button
-			Regular LEDs
-			Piezo Buzzer
-			Shift Register
-		- batteries
-		- "advanced components" like IR, 7-segments, RGB LEDs...
-		- learning to solder (not sure yet if/how this would be a good idea)
+    Not sure how far to take this...
+    Ideas:
+        - They start with a basic set like:
+            Arduino and Cable
+            breadboard
+            resistors
+            Button
+            Regular LEDs
+            Piezo Buzzer
+            Shift Register
+        - batteries
+        - "advanced components" like IR, 7-segments, RGB LEDs...
+        - learning to solder (not sure yet if/how this would be a good idea)
 A list of Achievements (like in the video games) for completing tasks.
-	Ideas:
-		- make a github account/repo or bring in a flash drive
-		- use a button
-		- use a potentiometer
-		- use temperature sensor
-		- use light sensor
-		- use a piezo as a noise maker
-		- use a piezo as a sensor
-		- use 7-segment display
-		- receive IR
-		- send IR
-		- use LED matrix
-		- use the shift register
-		- bring in each component (? 'use' each component?)
+    Ideas:
+        - make a github account/repo or bring in a flash drive
+        - use a button
+        - use a potentiometer
+        - use temperature sensor
+        - use light sensor
+        - use a piezo as a noise maker
+        - use a piezo as a sensor
+        - use 7-segment display
+        - receive IR
+        - send IR
+        - use LED matrix
+        - use the shift register
+        - bring in each component (? 'use' each component?)
 Turn it into a skills tree? Could be a "Sensor" or an "Actuator", then team up for the project?
-	No, bad idea, too much prep, not enough actuators, we want them to be good at everything.
+    No, bad idea, too much prep, not enough actuators, we want them to be good at everything.
 Maybe a raffle - get tickets for doing cool stuff, helping others, etc.
 
 
@@ -46,6 +46,5 @@ Happy Flower
 Math Problem Alarm Clock
 LED Light Show
 Shuttle Run Timer
-	Maybe I need to get big buttons and wire, maybe we use break-beams, maybe Arduinos shoot ir signals at each other
+    Maybe I need to get big buttons and wire, maybe we use break-beams, maybe Arduinos shoot ir signals at each other
 4-way Stop Light (bonus: add left turn signals or pressure sensitive interruption)
-	
