@@ -3,7 +3,9 @@ Learning
 Sometimes we want our programs to be able to adapt their behavior and do
 different things based on the situation. That's where 'if' comes in. With
 'if' we can tall our program to execute more code if a condition evaluates to
-'true'.
+'true'. See if you can alter the values of variables and constants in the
+following examples and make predictions about what will happen to check your
+understanding.
 
 Example:
 '''
@@ -12,17 +14,17 @@ Example:
 int g_number = 0;
 
 void setup() {
-	Serial.begin(9600);
+    Serial.begin(9600);
 }
 
 void loop() {
-	Serial.println(g_number);
+    Serial.println(g_number);
 
-	if (g_number > SMALLEST_BIG_NUMBER) {
-		Serial.println("g_number is getting kind of big...");
-	}
+    if (g_number > SMALLEST_BIG_NUMBER) {
+        Serial.println("g_number is getting kind of big...");
+    }
 
-	g_number += 1;
+    g_number += 1;
 }
 '''
 
@@ -30,11 +32,14 @@ In 'if' statements we can use the following logical operators to combine
 statements:
 ~~~
 
+!     Not. Inverts the value of the value after it.
+      Ex: '!true' is false, and '!false' is true.
+
 ==    Equals. Results in true if both sides are the same, false otherwise.
-	  Ex: '4 == 4' is true, but '4 == 0' is false.
+      Ex: '4 == 4' is true, but '4 == 0' is false.
 
 !=    Not Equals. The opposite of equals.
-	  Ex: '4 != 0' is true; '4 != 4' is false.
+      Ex: '4 != 0' is true; '4 != 4' is false.
 
 <     Less Than. Ex: '4 < 5' is true; '4 < 4' is false.
       There is also Greater Than ('>').
@@ -43,17 +48,39 @@ statements:
       There is also Greater Than or Equal ('>=').
 
 &&    Logical And. True only if both sides are true.
-	  Ex: 'true && true' is true; 'true && false' is false.
+      Ex: 'true && true' is true; 'true && false' is false.
 
 ||    Logical OR. If either side is true, then the whole thing is true.
-	  Ex: 'true || false' is true; 'false || false' is false.
+      Ex: 'true || false' is true; 'false || false' is false.
 
 ~~~
 
+Example:
+'''
+#define SMALLEST_BIG_NUMBER 10
+#define BIGGEST_SMALL_NUMBER 15
+
+int g_number = 0;
+
+void setup() {
+    Serial.begin(9600);
+}
+
+void loop() {
+    Serial.println(g_number);
+
+    if (g_number < SMALLEST_BIG_NUMBER || g_number > BIGGEST_SMALL_NUMBER) {
+        Serial.println("g_number is a good size.");
+    }
+
+    g_number += 1;
+}
+'''
 
 Challenges
 ----------
-1) Write a short program that shrieks if the value of a variable is too small.
+1) Write a short program that "shrieks" (prints "Aaaaahhh!" or something) if
+   the value of a variable is too small.
 
 2) Write a program that shrieks if the value of a variable is too small or too
    large.
