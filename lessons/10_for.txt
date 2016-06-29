@@ -42,4 +42,5 @@ Challenges
 3) Write a program that counts from 1 to 5, 5 times. (Hint: nest a for loop
    in the first one, and use a variable named "j" for the inner loop.)
 
-*) Make one up!
+*) Can you rewrite a for loop as a while loop? Can you rewrite a while loop as
+   a for loop?
