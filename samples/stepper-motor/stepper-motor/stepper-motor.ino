@@ -1,50 +1,56 @@
-/* YourDuino.com Example Software Sketch
-   Small Stepper Motor and Driver V1.4 11/30/2013
-   http://arduino-direct.com/sunshop/index.php?l=product_detail&p=126
-   Steps one revolution of output shaft, then back
-   terry@yourduino.com */
+/**
+ *
+ */
 
-/*-----( Import needed libraries )-----*/
-#include <Stepper.h>
+#include "BYJ48_Stepper.h"
 
-/*-----( Declare Constants, Pin Numbers )-----*/
-//---( Number of steps per revolution of INTERNAL motor in 4-step mode )---
-#define STEPS_PER_MOTOR_REVOLUTION 32   
+#define IN1   8
+#define IN2   9
+#define IN3  10
+#define IN4  11
 
-//---( Steps per OUTPUT SHAFT of gear reduction )---
-#define STEPS_PER_OUTPUT_REVOLUTION 32 * 64  //2048  
- 
+#define SEPARATION_TIME 2000 // milliseconds
 
-/*-----( Declare objects )-----*/
-// create an instance of the stepper class, specifying
-// the number of steps of the motor and the pins it's
-// attached to
+BYJ48_Stepper g_stepper(IN1, IN2, IN3, IN4);
 
-//The pin connections need to be 4 pins connected
-// to Motor Driver In1, In2, In3, In4  and then the pins entered
-// here in the sequence 1-3-2-4 for proper sequencing
-Stepper small_stepper(STEPS_PER_MOTOR_REVOLUTION, 8, 10, 9, 11);
+void setup() {
+  // Setup for the motor is done in the controller object.
 
-/*-----( Declare Variables )-----*/
-int  Steps2Take;
+  // The motor starts with a direction of clockwise and speed
+  // of 1 RPM. We can make it turn a specified number of
+  // revolutions. This takes a while, so this code is in
+  // setup to only run once.
+  g_stepper.turn(1.0);
+  delay(SEPARATION_TIME);
+}
 
-void setup()   /*----( SETUP: RUNS ONCE )----*/
-{
-// Nothing  (Stepper Library sets pins as outputs)
-}/*--(end setup )---*/
+void loop() {
+  // The motor can be set to turn the other direction, and turn
+  // faster. We can use a float number for the speed like "5.4",
+  // which is 5.4 rpm.
+  g_stepper.set_counter_clockwise();
+  g_stepper.set_speed(5.4);
+  g_stepper.turn(1.0);
+  delay(SEPARATION_TIME);
 
-void loop()   /*----( LOOP: RUNS CONSTANTLY )----*/
-{
-  Steps2Take  =  STEPS_PER_OUTPUT_REVOLUTION ;  // Rotate CW 1 turn
-  small_stepper.setSpeed(500);   
-  small_stepper.step(Steps2Take);
-  delay(1000);
+  // We can set the speed to any number between 0.5 and 17.3.
+  // If you don't want to remember that, you can always use the
+  // constants BYJ48_Stepper::MIN_RPM and
+  // BYJ48_Stepper::MAX_RPM.
+  // If we want more precision, we can also specify a numer of
+  // steps for the motor to turn.
+  g_stepper.set_clockwise();
+  g_stepper.set_speed(BYJ48_Stepper::MAX_RPM);
+  g_stepper.step(256);
+  delay(SEPARATION_TIME);
+
+  g_stepper.turn(1.0);
+  delay(250);
   
-  Steps2Take  =  - STEPS_PER_OUTPUT_REVOLUTION;  // Rotate CCW 1 turn  
-  small_stepper.setSpeed(500);  // 700 a good max speed??
-  small_stepper.step(Steps2Take);
-  delay(2000);
+  g_stepper.turn(1.0);
+  delay(250);
+  
+  g_stepper.turn(1.0);
+  delay(SEPARATION_TIME);
+}
 
-}/* --(end main loop )-- */
-
-/* ( THE END ) */
