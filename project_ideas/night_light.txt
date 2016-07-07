@@ -1,2 +1,9 @@
 NIGHT LIGHT
 ===========
+
+Create an interesting version of a night light!
+
+The basic idea is to have a program that turns on lights (LEDs) based on the
+light level in the room. But get creative! have more lights turn on when it
+is darker, have lights turn on or off the longer your project is in a dark
+room, etc.! Make the most creative night light you can!

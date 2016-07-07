@@ -2,3 +2,16 @@ SORTER
 ======
 
 Write a program capable of sorting a set of numbers.
+
+Sorting is actually kind of complicated, so if you can write a program that
+can sort some numbers in an array, that will be impressive!
+
+Use your Google Fu to lookup different sort algorithms. I recommend looking
+closely at "Bubble Sort".
+
+You can simply hard code some numbers in your program to start, and be sure to
+print the numbers before and after sorting to them to validate your code.
+
+If you are feeling spunky, try implementing multiple sorting algorithms,
+sorting large lists of numbers, and even timing their performance for
+comparison.

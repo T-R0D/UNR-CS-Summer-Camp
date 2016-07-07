@@ -1,2 +1,13 @@
 LOVE METER
 ==========
+
+Come and get your lo-o-o-ove!
+
+Use some kind of sensor to "measure love" (like a temperature sensor), then
+have a servo motor turn to point on some kind of dial how strong the love is.
+
+You can vary your choice of sensor, and then just display the category the
+reading is in. You don't necessarily have to use the sensor's reading, just
+wait for a reading and then generate a random number. You could also combine
+media, and use the servo motor for a physical dial/gauge and a screen to
+print text.

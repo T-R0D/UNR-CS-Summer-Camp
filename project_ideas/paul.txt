@@ -1,2 +1,4 @@
 PAUL (A Simon knock-off)
 ========================
+
+Create an Arduino version of the classic memory game!

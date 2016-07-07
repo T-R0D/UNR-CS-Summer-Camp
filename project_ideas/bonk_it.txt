@@ -1,2 +1,14 @@
 BONK-IT (Bop-it knock-off)
 ==========================
+
+Flick it! Twist it! Tip it!
+
+See if you can make a game that tells a player to complete one of three
+actions, and see if they can do it in the given time limit. You might use
+a piezo buzzer as a vibration sensor, an adjustable potentiometer as
+something to twist, and the tilt sensor to detect when the game is tipped.
+You could print text to tell the players what to do, or light LEDs to tell
+them what they should be doing.
+
+Bonus points if you can make the time allowed to do the action decrease as the
+game advances!

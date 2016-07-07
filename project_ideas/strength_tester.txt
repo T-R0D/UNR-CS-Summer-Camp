@@ -1,2 +1,18 @@
 STRENGTH TESTER
 ===============
+
+Just like the High Striker game (Google it) at the carnival!
+
+Well, not quite... We can't really build anything people can hit with a hammer.
+We can have people flick a vibration sensor with their fingers and light up
+LEDs according to the strength of the flick.
+
+Ideally, the game would do something like wait for someone to push a start
+button; blink a count down; then wait for a flick whose strength is above a
+certain (low) threshold, and light up LEDs according to the strength of the
+hit; then start the cycle over again.
+
+Some other features you might consider would be placing a time limit on how
+long players can flick the sensor, having the buzzer pay a sound if players
+flick hard enough, or creating a flashy light show for when the game is
+waiting to be played.

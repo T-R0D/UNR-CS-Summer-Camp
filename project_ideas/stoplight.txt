@@ -1,2 +1,11 @@
 STOPLIGHT
 =========
+
+Construct a basic traffic control device!
+
+Write a basic program that will manage traffic and prevent accidents! Start
+with lights for 2 roads, then move to 4. Then see if you can make the
+North/South lights work in sync with each other, and the East/West lights
+work in sync with each other. Maybe see if you can make your system
+interruptible by adding sensors to simulate cars pulling up to the light.
+If you really want to do this project to death, add left-turn lights too!
