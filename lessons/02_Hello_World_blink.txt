@@ -6,7 +6,7 @@ to a monitor, so a different kind of Hello World is to blink an on-board LED.
 This program is also simple:
 '''
 #define BLINK_TIME 500 // milliseconds
-#define LED_PIN D13
+#define LED_PIN 13 // special pin that controls LED light
 
 void setup() {
     pinMode(LED_PIN, OUTPUT);
