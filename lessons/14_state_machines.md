@@ -1,5 +1,4 @@
-Learning
---------
+## Learning
 If you want to make your programs easy to understand and easy to update,
 you should apply the concept of a "state-machine". The idea here is that
 your program should move from one "state" to the next in an easy to follow
@@ -19,7 +18,7 @@ It can often help to draw a picture of the states your program will move
 through. You can even use good old-fashioned paper!
 
 Example:
-'''
+```
 /**
  * A simple example of a state machine. This program starts in a waiting
  * state, then moves to a show state, and then starts the whole thing over.
@@ -86,22 +85,18 @@ void play_light_show() {
     Serial.println("I hope you enjoyed the show!");
     delay(1000);
 }
-'''
+```
 
 
-Challenges
-----------
-1) Write a simple program that uses a state machine to count to 3 in different
+## Challenges
+1. Write a simple program that uses a state machine to count to 3 in different
    languages. Use a different state for each language.
-
-2) Write a simple program that executes different behavior based on the
+2. Write a simple program that executes different behavior based on the
    light levels in the room. The program starts with a polling state, where
    the program reads the light reading in the room to find the lowest one for
    1 minute. If the light reading indicates darkness, the program should move
    to a state where an LED is left on for 1 minute. If the light reading is
    too high, the program should move to a state that ensures that the LED is
    off. Finally, the program should start the cycle over.
-
-3) Make up one!
-
-*) Use the state-machine strategy in your project!
+3. Make up one!
+4. `(Extra)` Use the state-machine strategy in your project!
