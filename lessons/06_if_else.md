@@ -23,7 +23,7 @@ void loop() {
         Serial.println("This is not the bot you're looking for...");
     }
 
-    g_number += 1;
+    g_bot_id += 1;
 }
 ```
 
