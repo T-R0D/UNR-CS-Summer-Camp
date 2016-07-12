@@ -15,12 +15,12 @@ int g_high_score = 5;
 
 void setup() {
     // declaring some variables
-    string phrase = "Hi there!";  // string variables hold text
+    String phrase = "Hi there!";  // string variables hold text
     int sheep_counted = 2;        // int variables hold whole numbers
     float inches = 3.26;          // float variables hold fractional numbers
 
     // we can update variable values, or use them to make new values.
-    string long_phrase = phrase + " Nice to meet you!";
+    String long_phrase = phrase + " Nice to meet you!";
     // Serial.println(sheep_counted);
 
     delay(BLINK_TIME);
@@ -45,19 +45,21 @@ die and are forgotten at the corresponding "}". On some occasions, we need
 variables to live outside of the "{}", so we make them global. We name these
 variables like "g_<something>" to help us remember that they are global. Global
 variables can be accessed from anywhere in the program after they have been
-declared. 
+declared.
 
 
 Challenges
 ----------
 1) Write a program that declares variables to hold your name, age, and
-   temperature. Declare one of them as a constant.
+   temperature. Declare one of these values as a constant instead of a
+   normal variable.
 
 2) Modify your program to assign new values to the variables later in the
    program.
 
 3) Modify your program to print the values of your variables at each step of
-   the program.
+   the program. You will need to add the Serial printing code like we used
+   in an earlier lesson.
 
 *) Modify your program to print the variable's name and its type before
    printing its value.

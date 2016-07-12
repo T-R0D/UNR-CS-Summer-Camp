@@ -2,3 +2,14 @@ PAUL (A Simon knock-off)
 ========================
 
 Create an Arduino version of the classic memory game!
+
+Really think through and draw out the state machine on this one, it will help.
+Use 3 or 4 LED colors and the same number of buttons. Have the game either
+randomly produce patterns for the user, or hard-code your own (random is
+probably better; hard-coding will make testing easier). Using arrays is
+probably the cleanest way to write the code, but you could also declare
+several distinct variables if you wanted.
+
+
+Bonus: See if you can make things move faster as the game progresses, or make
+the speed adjustable with a potentiometer.

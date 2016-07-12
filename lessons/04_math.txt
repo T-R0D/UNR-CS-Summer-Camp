@@ -44,15 +44,18 @@ a float.
 Challenges
 ----------
 1) Write a program that stores the result of a math expression in a variable.
-   It could be '2 + 2', or something more creative like '2 + 2 * 48 / 2'. Do the
-   math by hand to make sure you were right.
+   It could be '2 + 2', or something more creative like '2 + 2 * 48 / 2'.
+   Have your program print out the result. Do the math by hand to make sure
+   your program gets it right.
 
 2) Write a program that stores the result of a math expression using variables
    in another variable.
 
 3) Write a program that uses one of the '+=' kind of operators. Use it 3 times,
-   printing the variable's value after each time.
+   printing the variable's value after each usage of a '+=' kind of operator.
 
 *) Write a program that can solve for the c in a^2 + b^2 = c^2 when a and b are
-   known. (You might need to do some Google Fu to find out how to get the
-   square root of a number.)
+   known. Note that in C/C++, '^' is not the "power" operator, you might
+   need to do some Google Fu to find out how to compute powers of numbers or
+   how to get the square root of a number (although you should do as much
+   algebra as you can by hand first).
