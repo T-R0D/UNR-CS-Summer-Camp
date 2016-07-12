@@ -1,5 +1,4 @@
-Learning
---------
+## Learning
 Programs can be kind of boring if they can't take input from the outside
 world. This is why we use sensors! We won't be able to go over all of
 the sensors we will use here.
@@ -7,16 +6,16 @@ the sensors we will use here.
 Some sensors are special and will require different code, but for many basic
 sensors we connect them to one of the Arduino's pins. For sensors that can
 only register "on or off", we can attach the sensor to any pin and use
-the "digitalRead()" function. For sensors that can give many values, we must
-connect them to one of the A0-A5 pins and use the "analogRead()" function.
-Be sure to initialize the pin for reading with the "pinMode()" function in
+the `digitalRead()` function. For sensors that can give many values, we must
+connect them to one of the A0-A5 pins and use the `analogRead()` function.
+Be sure to initialize the pin for reading with the `pinMode()` function in
 the setup.
 
 It is often worth checking out the data sheet for a sensor if there is one
 so that you can be well-informed about how to use it.
 
 Example:
-'''
+```
 #define DIGITAL_SENSOR_PIN 8
 #define ANALOG_SENSOR_PIN A0
 
@@ -41,14 +40,10 @@ void loop() {
 
     delay(300);
 }
-'''
+```
 
-Challenges
-----------
-1) Learn to use a button in a program.
-
-2) Learn to use a light sensor in a program.
-
-3) Learn to use a piezo buzzer as a sensor in a program.
-
-*) Pick another sensor you find interesting and learn about it.
+## Challenges
+1. Learn to use a button in a program.
+2. Learn to use a light sensor in a program.
+3. Learn to use a piezo buzzer as a sensor in a program.
+4. `(Extra)` Pick another sensor you find interesting and learn about it.

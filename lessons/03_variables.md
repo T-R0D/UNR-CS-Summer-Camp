@@ -1,10 +1,9 @@
-Learning
---------
+## Learning
 Variables are how our programs "remember" things. Variables hold data, and then
 we can use or update that data later.
 
 Some examples:
-'''
+```
 // This is a constant.
 #define BLINK_TIME 500
 // This is another constant.
@@ -28,14 +27,14 @@ void setup() {
 
 void loop() {
 }
-'''
+```
 
 Notice at the top of the program, we have some "constants". Constants are
 very good to use because they make our code more readable, and we only
 have to change the value in one place if we need to. What if we want to
 make the blink time shorter? We can just change the value of the constant
 at the top of the program instead of having to look for and change all of
-the '500' that we may have typed. Also, constants can't be accidentally
+the `500` that we may have typed. Also, constants can't be accidentally
 changed, so they help keep bugs out of our programs. Notice that there are two
 ways of declaring constants, either way is fine.
 
@@ -47,19 +46,18 @@ variables like "g_<something>" to help us remember that they are global. Global
 variables can be accessed from anywhere in the program after they have been
 declared.
 
+## Challenges
 
-Challenges
-----------
-1) Write a program that declares variables to hold your name, age, and
+1. Write a program that declares variables to hold your name, age, and
    temperature. Declare one of these values as a constant instead of a
    normal variable.
 
-2) Modify your program to assign new values to the variables later in the
+2. Modify your program to assign new values to the variables later in the
    program.
 
-3) Modify your program to print the values of your variables at each step of
+3. Modify your program to print the values of your variables at each step of
    the program. You will need to add the Serial printing code like we used
    in an earlier lesson.
 
-*) Modify your program to print the variable's name and its type before
-   printing its value.
+4. `(Extra)` Modify your program to print the variable's name and its
+   type before printing its value.

@@ -1,5 +1,4 @@
-Learning
---------
+## Learning
 Actuators are components that do something in the physical world. They help
 make our projects interesting. Actuators could be anything from LEDs to motors
 to lasers (we have a small set of actuators in our kits). You should already
@@ -8,19 +7,19 @@ have experience with an LED from "hello world".
 Some actuators are special and will require different code, but for many basic
 actuators we connect them to one of the Arduino's pins. For actuators that can
 only be turned "on or off", we can attach the actuator to any pin and use
-the "digitalWrite()" function. For actuators that can accept many values, we
-connect them to one of the PWM (!) pins and use the "analogWrite()" function.
-Be sure to initialize the pin for writing with the "pinMode()" function in
+the `digitalWrite()` function. For actuators that can accept many values, we
+connect them to one of the PWM (!) pins and use the `analogWrite()` function.
+Be sure to initialize the pin for writing with the `pinMode()` function in
 the setup. It is also a good idea to initialize the pin to a known value in the
 setup.
 
-Keep in mind that you can only use values 0 to 255 when using "analogWrite()".
+Keep in mind that you can only use values 0 to 255 when using `analogWrite()`.
 
 It is often worth checking out the data sheet for an actuator if there is one
 so that you can be well-informed about how to use it.
 
 Example:
-'''
+```
 #define DIGITAL_ACTUATOR_PIN 8
 #define ANALOG_ACTUATOR_PIN 3
 
@@ -41,15 +40,10 @@ void loop() {
     analogWrite(ANALOG_ACTUATOR_PIN, 30);
     delay(300);
 }
-'''
+```
 
-
-Challenges
-----------
-1) Learn how to control LEDs, both on the Arduino and using the breadboard.
-
-2) Learn how to use a servo motor.
-
-3) Learn how to use the piezo buzzer to play tones.
-
-*) Pick another actuator you find interesting and learn about it.
+## Challenges
+1. Learn how to control LEDs, both on the Arduino and using the breadboard.
+2. Learn how to use a servo motor.
+3. Learn how to use the piezo buzzer to play tones.
+4. `(Extra)` Pick another actuator you find interesting and learn about it.
