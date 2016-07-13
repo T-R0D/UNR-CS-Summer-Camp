@@ -90,9 +90,9 @@ void setup() {
     int biggest_number = max_of_three(n1, n2, n3);
 
     Serial.print("The max of ");
-    Serial.print(x1); Serial.print(", ");
-    Serial.print(x2); Serial.print(", and ");
-    Serial.print(x3); Serial.print(" is ");
+    Serial.print(n1); Serial.print(", ");
+    Serial.print(n2); Serial.print(", and ");
+    Serial.print(n3); Serial.print(" is ");
     Serial.println(biggest_number);
 }
 
