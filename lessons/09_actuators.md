@@ -20,6 +20,13 @@ so that you can be well-informed about how to use it.
 
 Example:
 ```
+/**
+ * THIS CODE DOES NOT HAVE A CIRCUIT! If you try and run this code,
+ * it probably won't work. This is "abstract" code meant to compare and contrast
+ * digital sensors and analog sensors. If you want to, you can try and
+ * create your own circuit with some actuators, you can make this code work.
+ */
+
 #define DIGITAL_ACTUATOR_PIN 8
 #define ANALOG_ACTUATOR_PIN 3
 
@@ -43,7 +50,9 @@ void loop() {
 ```
 
 ## Challenges
-1. Learn how to control LEDs, both on the Arduino and using the breadboard.
+1. Learn how to control LEDs using analog write. Write your own blink program
+   that uses `analogWrite` to make the LED alternate between being dim and
+   bright.
 2. Learn how to use a servo motor.
 3. Learn how to use the piezo buzzer to play tones.
 4. `(Extra)` Pick another actuator you find interesting and learn about it.

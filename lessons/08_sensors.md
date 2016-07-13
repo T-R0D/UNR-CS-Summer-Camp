@@ -16,8 +16,15 @@ so that you can be well-informed about how to use it.
 
 Example:
 ```
-#define DIGITAL_SENSOR_PIN 8
-#define ANALOG_SENSOR_PIN A0
+/**
+ * THIS CODE DOES NOT HAVE A CIRCUIT! If you try and run this code,
+ * it probably won't work. This is "abstract" code meant to compare and contrast
+ * digital sensors and analog sensors. If you want to, you can try and
+ * create your own circuit with some sensors, you can make this code work.
+ */
+
+#define DIGITAL_SENSOR_PIN   8
+#define ANALOG_SENSOR_PIN   A0
 
 void setup() {
     Serial.begin(9600);

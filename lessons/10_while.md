@@ -37,6 +37,8 @@ void loop() {
    a reading that is a certain value or in a certain range before the loop
    exits.
 3. Write a program that has an infinite loop in it (of your own creation).
-4. `(Extra)` Google "Collatz Conjecture". Write a program that carries out the
+4. `(Extra)` Google "Fibonacci Sequence". Write a program that prints out
+   each number of the sequence using an infinite while loop.
+5. `(Extra)` Google "Collatz Conjecture". Write a program that carries out the
    computation of the sequence for some number that is stored in a variable
    at the start of "setup()".
