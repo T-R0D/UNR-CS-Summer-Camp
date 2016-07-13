@@ -19,23 +19,28 @@ void setup() {
   pinMode(BUZZER, OUTPUT);
 
   // We can play a tone with the built-in function like this:
-  tone(BUZZER, NOTE_A3, ONE_SECOND);
-  noTone(BUZZER);
-  tone(BUZZER, NOTE_C3, ONE_SECOND);
-  noTone(BUZZER);
+  tone(BUZZER, NOTE_A3); // Play the A3 note. 
+  delay(ONE_SECOND);     // Let it play for 1 second.
+  noTone(BUZZER);        // Stop the tone from playing.
+  
+  tone(BUZZER, NOTE_C); // Play the C3 note. 
+  delay(ONE_SECOND);     // Let it play for 1 second.
+  noTone(BUZZER);        // Stop the tone from playing.
 
   // We can also store information in arrays like above and
   // play a whole song:
   for (int i = 0; i < MELODY_LENGTH; i++) {
-    tone(BUZZER, melody[i], note_durations[i]);
-    delay(BETWEEN_NOTES);
-    noTone(BUZZER); 
+    tone(BUZZER, melody[i]);
+    delay(note_durations[i]);
+    noTone(BUZZER);
+    delay(BETWEEN_NOTES); 
   }
 }
 
 void loop() {
-  // ignore this
+  /* ignore this */
   delay(120000);
   play_dusty_old_tune(BUZZER);
+  /* ignore this */
 }
 
