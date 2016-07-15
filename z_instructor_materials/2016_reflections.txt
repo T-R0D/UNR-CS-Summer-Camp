@@ -1,0 +1,31 @@
+Good volunteers/helpers make things GREAT! (At least 2 or 3 if you can.)
+
+Add lesson module for electricity/circuit basics.
+
+Introduce the concept of state machines sooner. Perhaps do a very basic
+version early on, then an advanced one where we deconstruct the diagram into
+the code building blocks the other lesson modules discuss.
+
+Use a morse code SOS example that carries through the course. It is easy to do
+a rough version in the beginning with constants and lots of copy/pasted code.
+Then improve it with loops. Finally, improve it through the use of functions.
+
+Improve the challenge problems by making them more interesting. This can be
+done by editing for clarity, adding more pop-culture references, and making
+problems more relevant to problems the students will have.
+
+Add more easter eggs - because they are fun.
+
+Think about how to better engage younger campers - they seem to struggle
+with anything harder than printing messages, but love the circuits even
+though they don't understand those very well either.
+
+Some campers won't ask for help and need to be directly engaged to help
+motivate them to learn. Often sitting with them and coding an example with
+them is enough to hook them.
+
+The kids like to copy/paste a lot of crap from the internet. Not sure what to
+do about that - at least they are engaged?
+
+Having students make a full prototype product, including cardboard casings and
+such, does take more work, but it is very pleasing to see.
