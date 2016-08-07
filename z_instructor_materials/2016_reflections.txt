@@ -29,3 +29,7 @@ do about that - at least they are engaged?
 
 Having students make a full prototype product, including cardboard casings and
 such, does take more work, but it is very pleasing to see.
+
+Consider adding general requirements to the project, like "must use at least
+one for loop" or "must use 2 of the 3 types of functions we learned about" to
+help force use/solidification of topics covered in class.
